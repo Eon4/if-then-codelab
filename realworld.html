@@ -50,17 +50,15 @@
     <section class="assignmentArea">
 
         <h2>form validering</h2>
-
-        <form>
-            <label for="navn">Navn:</label><br>
-            <input type="text" id="myName" name="name" placeholder="Skriv dit navn her"><br>
+        <form action="Thanks.html" novalidate onsubmit="return validate(this);" class="myform">
+            <input type="text" id="fname" name="fname" placeholder="Skriv dit navn her" required><br>
 
             <label for="email">Email:</label><br>
-            <input type="text" id="myEmail" name="email" placeholder="Skriv din email her"><br>
+            <input type="text" id="email" name="email" placeholder="Skriv din email her" required><br>
 
 
             <label for="age">alder:</label><br>
-            <input type="text" id="myAge" name="age" placeholder="Alder"><br>
+            <input type="text" id="age" name="age" placeholder="Alder" required><br>
 
 
             <button id="submitButton">indsend</button>
